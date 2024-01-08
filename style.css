@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Copperplate",fantasy;
+}
+body {
+    background-image: url(wallpaper.jpg);
+    background-size: 100%;
+    background-position-y: -150px;
+}
+
+.container {
+    padding: 10px 10%;
+    background-color:#b5ff87;
+    border-style: double; 
+    border-color: #6e906a;
+    border-width: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #6e9c6d;
+    text-decoration: none;
+    font-size: 30px
+    ;
+}
+
+
+  
