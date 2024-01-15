@@ -3,6 +3,10 @@
     src: url('PKMN RBYGSC.ttf');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +19,8 @@ body {
     background-size: 100%;
     background-position-y: -150px;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #88C06F;
 }
 
 
@@ -134,11 +140,28 @@ img[alt~="MMCL"] {
     position: relative;
 }
 
+/* Skills */
 
 .container2 {
+    display: flex;
     padding: 10px 10%;
     background-color: #b5ff87;
     border-style: double;
     border-color: #6e906a;
     border-width: 10px;
+    align-items: center;
+    justify-content: center;
+    color: #6e9c6d;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+.skillsHeader {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Add padding for better visual appearance */
+    background-color: white;
 }
