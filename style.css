@@ -16,7 +16,7 @@ html {
 
 body {
     background-image: url('Assets/wallpaper.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-position-y: -150px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -164,4 +164,11 @@ img[alt~="MMCL"] {
     align-items: center; /* Center items vertically */
     padding: 10px; /* Add padding for better visual appearance */
     background-color: white;
+    margin-left: 38%;
+    margin-right: 38%;
+    box-shadow: 0px 2px 10px 0px #000000;
+}
+
+img[alt~="Charizard"] {
+    position: relative;
 }
