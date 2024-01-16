@@ -54,7 +54,7 @@ nav li {
     padding: 1px 40px;
     background-image: url('Assets/Pokeball.png');
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position:left center;
     background-size: 40px;
 }
 
@@ -106,23 +106,6 @@ img[alt~="PokeNav"]{
     width: 30px;
 }
 
-.contacts ul li{
-    list-style: none;
-    color: black;
-    text-decoration: none;
-}
-
-.contacts ul li a{
-    list-style: none;
-    color: black;
-    text-decoration: none;
-}
-
-.contacts ul li:hover{
-    background-color: white;
-}
-
-
 img[alt~="MMCL"] {
     margin-left: 5.5%;
 }
@@ -171,4 +154,63 @@ img[alt~="MMCL"] {
 
 img[alt~="Charizard"] {
     position: relative;
+}
+
+.icons {
+    position: relative;
+    width: 20px;
+}
+
+.skillslist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 100px;
+    margin-top: 50px;
+}
+
+.skillslist div {
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    align-content: center;
+    background: white;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-style:dashed;
+    box-shadow: 0px 2px 10px 0px #000000;
+}
+
+.skillslist div h3 {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Contacts */
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 1%;
+}
+
+.contactslist {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border-style: dashed;
+    border-color: black;
+    background: white;
+    margin: 2rem auto;
+    padding: 0.5rem;   
+}
+
+img [alt ~= "cicon"] {
+    position: relative;
+    width: 10px;
 }
