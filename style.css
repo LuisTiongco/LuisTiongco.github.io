@@ -76,38 +76,43 @@ nav li:hover {
 .row{
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-left: 14%;
+    justify-content: space-evenly;
+    margin-left: 0%;
     margin-top: 2%;
+    align-items: center;
+    align-content: center;
+    height: 480px;
+}
+
+img [alt~="PokemonTrainer"] {
+    width: 500%;
+    height: auto;
 }
 
 .header-case {
     background-image: url(Assets/PokemonTexbox.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-size:contain;
     background-color: white;
     width: 450px;
-    height: 150px;
+    height: 280px;
     padding: 20px;
     box-shadow: 0px 2px 4px 0px #000000;
+    white-space: wrap;
+    font-size: 15px;
+    font-weight: 600;
 }
 
-img[alt~="PokemonTrainer"] {
-    margin-left: 18%;
-}
-
-.contacts {
-    margin-top: 12%;
-}
-
-img[alt~="PokeNav"]{
-    position:relative;
-    height: 25px;
-    width: 30px;
-}
-
-img[alt~="MMCL"] {
-    margin-left: 5.5%;
+/* About */
+.header-case2 {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 0%;
+    margin-top: 2%;
+    align-items: center;
+    align-content: center;
+    height: 480px;
+    flex-wrap: wrap;
 }
 
 .MMCLtext{
@@ -122,6 +127,38 @@ img[alt~="MMCL"] {
     font-size: 20px;
     position: relative;
 }
+
+img[alt~="MMCL"] {
+    width: 400px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.MMCLtext1{
+    background-image: url(Assets/PokemonTexbox.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 450px;
+    height: 150px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px 0px #000000;
+    font-size: 20px;
+    position: relative;
+}
+
+.MMCLtext2{
+    background-image: url(Assets/PokemonTexbox.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 450px;
+    height: 150px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px 0px #000000;
+    font-size: 15.5px;
+    position: relative;
+}
+
 
 /* Skills */
 
@@ -149,6 +186,18 @@ img[alt~="MMCL"] {
     background-color: white;
     margin-left: 38%;
     margin-right: 38%;
+    box-shadow: 0px 2px 10px 0px #000000;
+}
+
+.skillsHeader2 {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Add padding for better visual appearance */
+    background-color: white;
+    margin-left: 39%;
+    margin-right: 39%;
     box-shadow: 0px 2px 10px 0px #000000;
 }
 
@@ -196,12 +245,12 @@ img[alt~="Charizard"] {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-top: 1%;
 }
 
 .contactslist {
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 2rem;
     border-style: dashed;
     border-color: black;
@@ -213,4 +262,10 @@ img[alt~="Charizard"] {
 img [alt ~= "cicon"] {
     position: relative;
     width: 10px;
+}
+
+img[alt~="PokeNav"]{
+    position:relative;
+    height: 25px;
+    width: 30px;
 }
